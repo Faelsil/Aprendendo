@@ -1,0 +1,25 @@
+/*Faça um programa que receba o preço de um produto que entrou em promoção com um desconto de 10%. Calcule e exiba o valor do desconto e o novo preço do produto. */
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner leia = new Scanner(System.in);
+
+    float preco; // entrada de dados
+    float desconto; //para receber um valor calculado
+    float preconov; // para receber um valor calculado  
+    
+    //entrada de dados
+    System.out.println("Digite o preço do produto");
+    preco = leia.nextFloat();
+
+    //calculos
+    desconto = preco * 10 / 100;
+    preconov = preco - desconto;
+
+    //saidas
+    System.out.println("\n\nDesconto: " + desconto);
+    System.out.println("\n\nNovo preço: " + preconov);
+  
+  }
+}
