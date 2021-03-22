@@ -1,0 +1,42 @@
+/* Uma agência bancária possui dois tipos de investimentos, conforme o quadro a
+seguir. Faça um algoritmo que receba o tipo de investimento  
+e seu valor e calcule e mostre o valor corrigido, 
+de acordo com o tipo de investimento.*/
+package exer20210322;
+
+import java.util.Scanner;
+
+public class Exer20210322 {
+
+     public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        
+       int tipo;
+       double valor, valorcorrigido;
+       double rendimento;
+       
+       System.out.println("Digite o tipo");         
+        System.out.println("1 - poupança");
+        System.out.println("2 - fundos de renda fix"); 
+        tipo = leia.nextInt();
+        
+        System.out.println("Digite o tipo"); 
+        valor = leia.nextDouble();
+        
+        if(tipo == 1){
+            rendimento = valor * 3/100;
+        } 
+        else {
+            rendimento = valor * 0.04;
+        }
+        
+        valorcorrigido = valor + rendimento;
+        
+        //saida 
+        
+       System.out.println("valor corrigido:" + valorcorrigido);
+        
+        
+    }
+    
+}
